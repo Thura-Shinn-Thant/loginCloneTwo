@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Thura's Animated Login Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='LoginForm.css'>
+    
+
+</head>
+
+<body>
+    <form class="box1" action="LoginForm.html" method="post">
+        <h1>Login Here</h1>
+        <input type="text" name="" placeholder="Username">
+        <input type="password" name="" placeholder="Password">
+        <input type="email" name="" placeholder="email">
+        <input type="submit" name="" value="login" onclick="validate()">
+    </form>
+    <script src="">
+        function validate() {
+            var username = document.getElementById("username").value
+            var password = document.getElementById("password").value
+            var email = document.getElementById("email").value
+            if (username == "playboi" && password == "user" && email == "abcdefg@gmail.com") {
+                alert("You Logged in Successfully");
+                return false;
+            }
+            else {
+                alert("You Fail Login");
+            }
+        }
+    </script>
+</body>
+
+</html>
